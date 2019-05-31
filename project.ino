@@ -1,10 +1,8 @@
 // This #include statement was automatically added by the Particle IDE.
 #include "DHT.h"
 
-// Defining Pin
 #define DHTPIN 2
 
-// Defining Sensor type
 #define DHTTYPE DHT22  
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -18,7 +16,7 @@ void setup() {
     pinMode(blue, OUTPUT);
     pinMode(yellow, OUTPUT);
     
-	Serial.begin(9600);
+    Serial.begin(9600);
 
     dht.begin();
 }
